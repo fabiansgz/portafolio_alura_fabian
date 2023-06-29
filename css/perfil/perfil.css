@@ -1,0 +1,78 @@
+/* ------------------------------------------------------- */
+/* Seccion Perfil */
+.perfil {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil__imagen {
+    width: 368px;
+    height: 368px;
+    background-image: url("./assets/profile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.perfil__detalle {
+    margin-top: 3rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil__titulo {
+    color: var(--color_plomo);
+    font-size: 3.25rem;
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.perfil__descripcion {
+    margin-top: 1rem;
+    color: var(--color_celeste);
+    font-size: 1.375rem;
+    font-family: Raleway;
+    font-weight: 500;
+    padding-right: 6rem;
+}
+
+.perfil__redes {
+    margin-left: 0;
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.perfil__redes__item {
+    list-style: none;
+    align-items: center;
+    color: var(--color_plomo);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 500;
+    gap: 1.5rem;
+}
+
+.perfil__redes__link {
+    color: var(--color_plomo);
+    text-decoration: none;
+    border-style: none;    
+    border: 0 none;
+    outline: none;
+}
+
+.perfil__redes__icono {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.2rem;
+    background-image: url("./assets/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;        
+    border: 0 none;
+    outline: none;
+}

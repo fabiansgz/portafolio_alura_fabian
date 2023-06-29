@@ -1,0 +1,48 @@
+/*Seccion Menu*/
+.menu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.menu__detalle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1rem;
+    gap: 0.7rem;
+}
+
+.menu__titulo {
+    color: var(--color_plomo);
+}
+
+.menu__lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu__item {
+    color: var(--color_plomo);
+    font-size: 1rem;
+    font-weight: 400;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu__item--link {
+    text-decoration: none;
+    color: var(--color_plomo);
+}
+
+.menu__item--link:hover {
+    color: var(--color_celeste);
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+/* ------------------------------------------------------- */
+/*Seccion Skill*/
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__titulo {
+}
+
+.skills__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skills__box {
+    background-color: var(--color_celeste);
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.skills__box--imagen {
+    color: var(--color_plomo);
+    text-align: center;
+    font-size: 2rem;
+    font-family: Font Awesome 5 Brands;
+}
+
+.skills__box--nombre {
+    color: var(--color_negro);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 700;
+}

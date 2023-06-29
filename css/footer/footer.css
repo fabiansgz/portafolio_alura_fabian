@@ -1,0 +1,29 @@
+/* ------------------------------------------------------- */
+/* Footer */
+.footer {
+    background-color: var(--color_negro);
+}
+
+.footer__rodapie {
+    text-align: center;
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 500;
+}
+
+.footer__rodapie--titulo {
+    color: var(--color_celeste);
+    font-size: 1rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+.footer__rodapie--link {
+    text-decoration: none;
+    color: var(--color_celeste);
+}
+
+.footer__rodapie--link:hover {
+    color: var(--color_celeste);
+    text-decoration: underline;
+}

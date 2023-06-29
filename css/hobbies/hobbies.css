@@ -1,0 +1,37 @@
+/* ------------------------------------------------------- */
+/*Seccion Hobbies*/
+.hobbies {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.hobbies__titulo {
+}
+.hobbies__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.hobbies__box {
+    background-color: var(--color_celeste);
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.hobbies__box--imagen {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+.hobbies__box--nombre {
+    color: var(--color_negro);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 700;
+}

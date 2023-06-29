@@ -1,0 +1,23 @@
+/* ------------------------------------------------------- */
+/* Seccion Sobre Mi*/
+.sobremi {
+    background-color: var(--color_plomo);
+    border: 1px solid;
+    border-color: var(--color_plomo);
+    margin-top: 2rem;
+}
+
+.sobremi__container {
+    padding: 1.2rem;
+}
+
+.sobremi__titulo {
+    
+}
+
+.sobremi__descripcion {
+    color: var(--color_negro);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 300;
+}

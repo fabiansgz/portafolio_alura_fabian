@@ -1,0 +1,122 @@
+/* ------------------------------------------------------- */
+/* Contacto */
+.formulario {
+    background-color: var(--color_negro);
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid;
+    border-color: var(--color_celeste);
+}
+.formulario__contenedor {
+    display: flex;
+    width: 71rem;
+    margin-top: 0;
+    align-items: center;
+    gap: 1rem;
+}
+.formulario__contenedor--imagen {
+    width: 29rem;
+    height: 37.0625rem;
+    flex-shrink: 0;
+    background: url("./assets/contact_image.png"), lightgray 50% / cover no-repeat, #ededed;
+}
+.formulario__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.formulario__box--titulo {
+    color: var(--color_plomo);
+    font-size: 2rem;
+    font-family: Raleway;
+    font-weight: 700;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+}
+.formulario__box--subtitulo {
+    color: var(--color_plomo);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 500;
+}
+.formulario__datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1 0 0;
+}
+.formulario__datos--nombre {
+    font-size: 0.75rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    width: 40rem;        
+    padding: 0.5em;
+    margin-bottom: 0.5em;    
+    border: 4px solid;
+    border-color: var(--color_celeste);
+    background-color: var(--color_plomo);
+    color: var(--color_negro);
+}
+.formulario__datos--email {
+    font-size: 0.75rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    width: 40rem;    
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 4px solid;
+    border-color: var(--color_celeste);
+    background-color: var(--color_plomo);
+    color: var(--color_negro);
+}
+.formulario__datos--asunto {
+    font-size: 0.75rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    width: 40rem;    
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 4px solid;
+    border-color: var(--color_celeste);
+    background-color: var(--color_plomo);
+    color: var(--color_negro);
+}
+.formulario__datos--mensaje {
+    font-size: 0.75rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    width: 40rem;    
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 4px solid;
+    border-color: var(--color_celeste);
+    background-color: var(--color_plomo);
+    color: var(--color_negro);
+}
+.formulario__datos--boton {
+    background: var(--color_celeste);
+    background-color: var(--color_celeste);
+    width: 100%;    
+    color: var(--color_negro);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario__datos--boton:hover {
+    background-color: var(--color_negro);
+    background: var(--color_negro);
+    color: var(--color_plomo);    
+}

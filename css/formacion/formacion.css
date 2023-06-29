@@ -1,0 +1,39 @@
+/* ------------------------------------------------------- */
+/* Formacion */
+.formacion {
+    background-color: white;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.formacion__titulo {
+}
+.cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cursos__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.cursos__item--imagen {
+    width: 12rem;
+    height: 8.125rem;
+    flex-shrink: 0;
+}
+.cursos__item--titulo {
+    color: var(--color_text);
+    font-size: 1.375rem;
+    font-family: Raleway;
+    font-weight: 700;
+}
+.cursos__item--subtitulo {
+    color: var(--color_text);
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 500;
+}
