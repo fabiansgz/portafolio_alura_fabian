@@ -25,7 +25,8 @@
     width: 29rem;
     height: 37.0625rem;
     flex-shrink: 0;
-    background-image: url("./assets/contact_image.png");
+    background-size: cover;
+    background-image: url(/assets/img/contact_image.png);
 }
 .formulario__box {
     display: flex;
