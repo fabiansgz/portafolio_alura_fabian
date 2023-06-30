@@ -39,7 +39,7 @@
     font-size: 2rem;
     font-family: Raleway;
     font-weight: 700;
-    margin-top: 1.7rem;
+    margin-top: 0;
     margin-bottom: 2rem;
 }
 .formulario__box--subtitulo {
@@ -47,6 +47,7 @@
     font-size: 1rem;
     font-family: Raleway;
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 .formulario__datos {
     display: flex;
@@ -56,11 +57,27 @@
     gap: 2rem;
     flex: 1 0 0;
 }
+
+.formulario__datos--fieldset {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+}
+
+.formulario__datos--etiqueta {
+    font-size: 0.75rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    display: block;
+    color: var(--color_celeste);
+}
+
 .formulario__datos--nombre {
     font-size: 0.75rem;
     font-family: Raleway;
     line-height: 1rem;
-    width: 40rem;        
+    width: 100%;        
     padding: 0.5em;
     margin-bottom: 0.5em;    
     border: 4px solid;
@@ -72,7 +89,7 @@
     font-size: 0.75rem;
     font-family: Raleway;
     line-height: 1rem;
-    width: 40rem;    
+    width: 100%;    
     padding: 0.5em;
     margin-bottom: 0.5em;
     border: 4px solid;
@@ -84,7 +101,7 @@
     font-size: 0.75rem;
     font-family: Raleway;
     line-height: 1rem;
-    width: 40rem;    
+    width: 100%;    
     padding: 0.5em;
     margin-bottom: 0.5em;
     border: 4px solid;
@@ -96,7 +113,7 @@
     font-size: 0.75rem;
     font-family: Raleway;
     line-height: 1rem;
-    width: 40rem;    
+    width: 100%;    
     padding: 0.5em;
     margin-bottom: 0.5em;
     border: 4px solid;
