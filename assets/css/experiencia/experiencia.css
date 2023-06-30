@@ -66,14 +66,43 @@
     height: 4em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .experiencia__item--imagen {
         width: 13rem;
     }
     .proyectoinfo__box--repo {
         width: 6em;
     }
+    .proyectoinfo__box--demo {
+        width: 6em;
+    }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width:481px) and (max-width: 768px) {
+.experiencia__item--imagen {
+        width: 28rem;
+    }
     .proyectoinfo__box--repo {
         width: 6em;
     }
+    .proyectoinfo__box--demo {
+        width: 6em;
+    }
+}
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .experiencia__item--imagen {
+        width: 40rem;
+    }
+    .proyectoinfo__box--repo {
+        width: 6em;
+    }
+    .proyectoinfo__box--demo {
+        width: 6em;
+    }
+}
+/* Escritorios */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
 }

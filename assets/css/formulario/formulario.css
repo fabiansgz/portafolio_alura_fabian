@@ -145,7 +145,7 @@
     color: var(--color_plomo);    
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     
     .formulario {
         padding: 1rem;
@@ -160,4 +160,52 @@
         width: 26rem;        
     }
 
+}
+
+/* iPads, Tablets */
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .formulario {
+        padding: 1rem;
+    }
+    
+    .formulario__contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario__datos--fieldset {
+        width: 40rem;        
+    }
+}
+/* Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .formulario {
+        padding: 2rem;
+    }
+    
+    .formulario__datos--fieldset {
+        width: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+    .formulario__contenedor--imagen {
+        width: 47%;
+    }
+}
+/* Escritorios */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .formulario {
+        padding: 2rem;
+    }
+    
+    .formulario__datos--fieldset {
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+    .formulario__contenedor--imagen {
+        width: 47%;
+    }
 }
