@@ -14,8 +14,8 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    
-    /* border-radius: 100%; */
+
+
 }
 
 .perfil__detalle {
@@ -61,7 +61,7 @@
 .perfil__redes__link {
     color: var(--color_plomo);
     text-decoration: none;
-    border-style: none;    
+    border-style: none;
     border: 0 none;
     outline: none;
 }
@@ -74,7 +74,69 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border-style: none;        
+    border-style: none;
     border: 0 none;
-    
+
+}
+
+@media screen and (min-width: 480px) {
+    .perfil {
+        margin-top: 12rem;
+
+    }
+
+    .perfil__detalle {
+        padding-top: 0;
+    }
+
+    .perfil__titulo {
+        color: var(--color_plomo);
+        font-size: 2rem;
+        font-family: Raleway;
+        font-weight: 700;
+    }
+
+    .perfil__descripcion {
+        margin-top: 1rem;
+        color: var(--color_celeste);
+        font-size: 1.2rem;
+        font-family: Raleway;
+        font-weight: 500;
+    }
+
+    .perfil__imagen {
+        width: 368px;
+        height: 20vh;
+        background-image: url(/assets/img/profile.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .perfil__redes {
+        margin-left: 0;
+        padding: 0.5rem 0;
+        display: flex;
+        gap: 2.2rem;
+    }
+
+    .perfil__redes__item {
+        display: flex;
+        
+        list-style: none;
+        align-items: center;
+        color: var(--color_plomo);
+        font-size: 0.9rem;
+        font-family: Raleway;
+        font-weight: 500;
+
+    }
+
+    .perfil__redes__icono {
+
+        margin-left: 2px;
+
+    }
+
 }

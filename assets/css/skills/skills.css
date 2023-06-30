@@ -41,3 +41,18 @@
     font-family: Raleway;
     font-weight: 700;
 }
+
+@media screen and (min-width: 480px) {
+    .skills__box {
+        background-color: var(--color_celeste);
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 0.5rem;
+    }
+}

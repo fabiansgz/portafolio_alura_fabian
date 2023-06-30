@@ -8,6 +8,14 @@
     align-content: flex-end;
 }
 
+.menu__logo {
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/img/ico-logo-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .menu__detalle {
     display: flex;
     align-items: center;
@@ -48,5 +56,42 @@
 }
 
 @media screen and (min-width: 480px) {
-    
+    .todo {
+        margin: 2rem 1rem 0 1rem;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .menu__logo  {
+        display: none;
+    }
+    .menu__titulo {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .menu__lista {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        gap: 0.6rem;
+    }
+    .menu__item {
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        font-size: 0.9rem;
+        border: 1px solid;
+        width: 90vw;
+        align-items: center;
+        background-color: var(--color_plomo);
+        color: var(--color_negro);
+    }
+    .menu__item--link {
+        color: var(--color_negro);
+        align-items: center;
+        text-align: center;
+    }
 }

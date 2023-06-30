@@ -37,3 +37,20 @@
     font-family: Raleway;
     font-weight: 500;
 }
+
+@media screen and (min-width: 480px) {
+    .cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cursos__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+}
