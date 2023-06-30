@@ -46,3 +46,7 @@
     color: var(--color_celeste);
     text-decoration: underline;
 }
+
+@media screen and (min-width: 480px) {
+    
+}

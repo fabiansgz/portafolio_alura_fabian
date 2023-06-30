@@ -23,10 +23,16 @@
 }
 .formulario__contenedor--imagen {
     width: 29rem;
-    height: 37.0625rem;
+    height: 50%;
     flex-shrink: 0;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
     background-size: cover;
-    background-image: url(/assets/img/contact_image.png);
+    background-position: center;
+    background-color: var(--color_negro);
+    
 }
 .formulario__box {
     display: flex;
