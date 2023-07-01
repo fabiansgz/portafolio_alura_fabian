@@ -36,7 +36,10 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .hobbies__contenedor {
+        gap: 2rem;
+    }
     .hobbies__box {
         background-color: var(--color_celeste);
         display: flex;
@@ -52,6 +55,7 @@
 }
 
 @media screen and (min-width:481px) and (max-width: 692px), screen and (min-device-width:481px) and (max-device-width: 692px) {
+    
     .hobbies__box {        
         width: 9rem;
         height: 9rem;

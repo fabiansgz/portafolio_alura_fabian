@@ -75,21 +75,24 @@
     border: 0 none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .perfil {
         margin-top: 12rem;
         margin-bottom: 3.5rem;
     }
 
     .perfil__detalle {
-        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .perfil__titulo {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .perfil__descripcion {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        padding-right: 0;
     }
 
     .perfil__imagen {
@@ -102,10 +105,10 @@
     }
 
     .perfil__redes {
-        margin-left: 0;
-        padding: 0.5rem 0 3rem 0;
         display: flex;
-        gap: 2.2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .perfil__redes__item {

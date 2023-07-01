@@ -67,9 +67,17 @@
     height: 4em;
 }
 
-@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px), screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .experiencia__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
     .experiencia__item--imagen {
-        width: 13rem;
+        max-width: 80%;
+        height: auto;
+        flex-shrink: 0; 
     }
     .proyectoinfo__box--repo {
         width: 6em;
