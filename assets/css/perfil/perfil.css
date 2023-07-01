@@ -4,27 +4,26 @@
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
-.perfil__detalle {    
+.perfil__detalle {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
 }
 
-.perfil__titulo {    
-    
+.perfil__titulo {
     color: var(--color_plomo);
     font-size: 4.25rem;
     font-family: Raleway;
     font-weight: 700;
 }
 
-.perfil__imagen {    
+.perfil__imagen {
     max-width: 100%;
-    height: auto;    
+    height: auto;
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -74,13 +73,12 @@
     background-size: contain;
     border-style: none;
     border: 0 none;
-
 }
 
 @media screen and (max-width: 480px) {
     .perfil {
         margin-top: 12rem;
-
+        margin-bottom: 3.5rem;
     }
 
     .perfil__detalle {
@@ -88,101 +86,80 @@
     }
 
     .perfil__titulo {
-        color: var(--color_plomo);
         font-size: 2rem;
-        font-family: Raleway;
-        font-weight: 700;
     }
-
     .perfil__descripcion {
-        margin-top: 1rem;
-        color: var(--color_celeste);
-        font-size: 1.2rem;
-        font-family: Raleway;
-        font-weight: 500;
+        font-size: 0.7rem;
     }
 
     .perfil__imagen {
-        width: 368px;
-        height: 20vh;
+        max-width: 100%;
+        height: auto;
         background-image: url("../../img/perfilfoto.png");
         background-position: top;
         background-repeat: no-repeat;
         background-size: contain;
-
     }
 
     .perfil__redes {
         margin-left: 0;
-        padding: 0.5rem 0;
+        padding: 0.5rem 0 3rem 0;
         display: flex;
         gap: 2.2rem;
     }
 
     .perfil__redes__item {
         display: flex;
-        
+
         list-style: none;
         align-items: center;
         color: var(--color_plomo);
         font-size: 0.9rem;
         font-family: Raleway;
         font-weight: 500;
-
     }
 
     .perfil__redes__icono {
-
         margin-left: 2px;
-
     }
-
 }
 
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px),
+    screen and (min-device-width: 481px) and (max-device-width: 768px) {
     .perfil {
-        margin-top: 1rem;
-        height: 42vh;
+        margin-top: 1rem;        
         display: flex;
         flex-direction: column;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .perfil__detalle {
         padding-top: 0;
     }
 
-    .perfil__titulo {        
-        font-size: 2.8rem;        
+    .perfil__titulo {
+        font-size: 2rem;
+    }
+    .perfil__descripcion {
+        font-size: 1.1rem;
     }
 
-    .perfil__descripcion {        
-        font-size: 1rem;        
-    }
-
-    .perfil__imagen {        
+    .perfil__imagen {
         height: 30vh;
         background-position: center;
     }
 
     .perfil__redes {
         margin-left: 0;
-        padding: 0.5rem 0;
+        padding: 0.5rem 0 3rem 0;
         display: flex;
-        gap: 2.2rem;
+        gap: 1.2rem;
+        margin-bottom: 1rem;
     }
 
-    .perfil__redes__item {
-        display: flex;
-        
-        list-style: none;
-        align-items: center;
-        color: var(--color_plomo);
-        font-size: 0.9rem;
-        font-family: Raleway;
-        font-weight: 500;
-
+    .perfil__redes__item {        
+        font-size: 0.9rem;        
     }
 
     .perfil__redes__icono {
@@ -193,11 +170,49 @@
         width: 6rem;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 526px),
+    screen and (min-device-width: 481px) and (max-device-width: 526px) {
+    
+    .perfil__titulo {
+        font-size: 2rem;
+    }
+    .perfil__descripcion {
+        font-size: 1.1rem;
+    }
+    .perfil__redes {
+        margin-left: 0;
+        padding: 0.5rem 0 3rem 0;
+        display: flex;
+        
+    }
+    .perfil__redes__item {        
+        font-size: 0.9rem;        
+    }
+    
+}
+
+@media screen and (min-width: 527px) and (max-width: 632px),
+    screen and (min-device-width: 527px) and (max-device-width: 632px) {
+    .perfil__titulo {
+        font-size: 2.2rem;
+    }
+    
+    .perfil__descripcion {
+        font-size: 1.1rem;
+    }
+
+    .perfil__redes {
+        margin-left: 0;
+        padding: 0.5rem 0 3rem 0;
+        display: flex;
+        
+    }
+}
+
 /* Laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
 }
 /* Escritorios */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    
 }

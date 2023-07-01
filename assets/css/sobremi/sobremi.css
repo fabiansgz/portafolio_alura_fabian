@@ -1,6 +1,6 @@
 /* ------------------------------------------------------- */
 /* Seccion Sobre Mi*/
-.sobremi {
+.sobremi {    
     background-color: var(--color_plomo);
     border: 1px solid;
     border-color: var(--color_plomo);
@@ -9,10 +9,14 @@
 
 .sobremi__container {
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.sobremi__titulo {
-    
+.sobremi__firma {
+    max-width: 20%;
+    height: auto;
 }
 
 .sobremi__descripcion {
@@ -23,7 +27,7 @@
 }
 
 @media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px) {
-    .sobremi__descripcion {
+    .sobremi {
         
     }    
 }

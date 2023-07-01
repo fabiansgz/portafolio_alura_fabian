@@ -57,14 +57,23 @@
     }
 }
 
+@media screen and (min-width:481px) and (max-width: 692px), screen and (min-device-width:481px) and (max-device-width: 692px) {
+    .skills__box {        
+        width: 9rem;
+        height: 9rem;        
+        margin-bottom: 1.5rem;        
+    }
+}
+
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px) {
+@media screen and (min-width:693px) and (max-width: 768px), screen and (min-device-width:693px) and (max-device-width: 768px) {
     .skills__box {        
         width: 10rem;
         height: 10rem;        
         margin-bottom: 1.5rem;        
     }
 }
+
 /* Laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
