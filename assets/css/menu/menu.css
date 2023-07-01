@@ -55,10 +55,11 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
     .todo {
         margin: 2rem 1rem 0 1rem;
     }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -82,7 +83,7 @@
         display: flex;
         justify-content: center;
         height: 24px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         border: 1px solid;
         width: 90vw;
         align-items: center;
@@ -97,14 +98,16 @@
 }
 
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px) {
-
+@media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px)  {
+    .menu__item {
+        font-size: 0.8rem;
+    }
 }
 /* Laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px), screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 
 }
 /* Escritorios */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px), screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
     
 }

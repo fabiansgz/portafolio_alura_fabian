@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: end;
     gap: 0.5rem;
 }
 .cursos__item--imagen {
@@ -56,8 +57,28 @@
 }
 
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px) {
-
+@media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px) {
+    .cursos__item {
+        justify-content: end;
+        align-items: center;
+    }
+    .cursos__item--imagen {
+        max-width: 60%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .cursos__item--titulo {
+        color: var(--color_text);
+        font-size: 1.075rem;
+        font-family: Raleway;
+        font-weight: 700;
+    }
+    .cursos__item--subtitulo {
+        color: var(--color_text);
+        font-size: 0.8rem;
+        font-family: Raleway;
+        font-weight: 500;
+    }
 }
 /* Laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {

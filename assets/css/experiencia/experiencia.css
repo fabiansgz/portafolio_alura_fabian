@@ -12,16 +12,17 @@
 
 .experiencia__item {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
+    align-items: center;    
 }
 .experiencia__item--imagen {
-    width: 47rem;
+    max-width: 70%;
+    height: auto;
     flex-shrink: 0;
-    align-self: stretch;
+    /* align-self: stretch; */
 }
-.proyectoinfo {
+.proyectoinfo {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +67,7 @@
     height: 4em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
     .experiencia__item--imagen {
         width: 13rem;
     }
@@ -79,30 +80,68 @@
 }
 
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px) {
-.experiencia__item--imagen {
-        width: 28rem;
+@media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px)  {
+    .experiencia__item {
+        gap: 0.5rem;    
+    }
+    .experiencia__item--imagen {
+        max-width: 60%;
+        height: auto;
+        flex-shrink: 0;        
     }
     .proyectoinfo__box--repo {
         width: 6em;
+        height: 3em;
     }
     .proyectoinfo__box--demo {
         width: 6em;
+        height: 3em;
     }
 }
-/* Laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+@media screen and (min-width: 769px) and (max-width: 944px), screen and (min-device-width: 769px) and (max-device-width: 944px)  {
+    .experiencia__item {
+        gap: 0.5rem;    
+    }
     .experiencia__item--imagen {
-        width: 40rem;
+        max-width: 60%;
+        height: auto;
+        flex-shrink: 0;        
     }
     .proyectoinfo__box--repo {
-        width: 6em;
+        width: 8em;
+        height: 4em;
     }
     .proyectoinfo__box--demo {
-        width: 6em;
+        width: 8em;
+        height: 4em;
+    }
+}
+
+/* Laptops */
+@media screen and (min-width: 945px) and (max-width: 1024px), screen and (min-device-width: 945px) and (max-device-width: 1024px) {
+    .experiencia__item {
+        gap: 0.5rem;    
+    }
+    .experiencia__item--imagen {
+        max-width: 70%;
+        height: auto;
+        flex-shrink: 0;        
+    }
+    .proyectoinfo__box--repo {
+        width: 8em;
+        height: 4em;
+    }
+    .proyectoinfo__box--demo {
+        width: 8em;
+        height: 4em;
     }
 }
 /* Escritorios */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-    
+@media screen and (min-width: 1025px) and (max-width: 1200px), screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+    .experiencia__item--imagen {
+        max-width: 70%;
+        height: auto;
+        flex-shrink: 0;        
+    }
 }

@@ -2,43 +2,38 @@
 /* Contacto */
 .formulario {
     background-color: var(--color_negro);
-    margin-top: 2rem;
-    display: flex;
-    width: 100%;
+    margin-top: 2rem;    
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 6rem;
-    padding-bottom: 4rem;
-    align-items: center;
-    gap: 1rem;
+    padding-bottom: 4rem;        
     border: 1px solid;
     border-color: var(--color_celeste);
 }
 .formulario__contenedor {
     display: flex;
-    width: 71rem;
-    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 71rem; */
+    /* margin-top: 0; */
     align-items: center;
     gap: 1rem;
 }
 .formulario__contenedor--imagen {
-    width: 29rem;
-    height: 50%;
+    max-width: 100%;
+    height: auto;
     flex-shrink: 0;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    /* margin-left: auto;
+    margin-right: auto; */
+  
     background-size: cover;
     background-position: center;
     background-color: var(--color_negro);
     
 }
 .formulario__box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    width: 100%;        
 }
 .formulario__box--titulo {
     color: var(--color_plomo);
@@ -56,16 +51,16 @@
     margin-bottom: 1rem;
 }
 .formulario__datos {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; */
     gap: 2rem;
     flex: 1 0 0;
 }
 
 .formulario__datos--fieldset {
-    width: 35rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: initial;
@@ -75,6 +70,7 @@
     font-size: 0.75rem;
     font-family: Raleway;
     line-height: 1rem;
+    width: 100%;
     display: block;
     color: var(--color_celeste);
 }
@@ -157,55 +153,56 @@
     }
 
     .formulario__datos--fieldset {
-        width: 26rem;        
+        /* width: 26rem; */
     }
 
 }
 
 /* iPads, Tablets */
-@media screen and (min-width:481px) and (max-width: 768px) {
+@media screen and (min-width:481px) and (max-width: 768px), screen and (min-device-width:481px) and (max-device-width: 768px) {
     .formulario {
-        padding: 1rem;
+        padding: 2rem;
     }
     
-    .formulario__contenedor {
+    .formulario__datos--fieldset {        
         display: flex;
         flex-direction: column;
+        align-items: initial;
     }
-
-    .formulario__datos--fieldset {
-        width: 40rem;        
+    .formulario__contenedor--imagen {
+        max-width: 50%;
+        height: auto;
     }
 }
 /* Laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px), screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     .formulario {
         padding: 2rem;
     }
     
-    .formulario__datos--fieldset {
-        width: 28rem;
+    .formulario__datos--fieldset {        
         display: flex;
         flex-direction: column;
         align-items: initial;
     }
     .formulario__contenedor--imagen {
-        width: 47%;
+        max-width: 100%;
+        height: auto;
     }
 }
 /* Escritorios */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px), screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
     .formulario {
         padding: 2rem;
     }
     
-    .formulario__datos--fieldset {
-        width: 35rem;
+    .formulario__datos--fieldset {        
         display: flex;
         flex-direction: column;
         align-items: initial;
     }
     .formulario__contenedor--imagen {
-        width: 47%;
+        max-width: 100%;
+        height: auto;
     }
 }
